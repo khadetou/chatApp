@@ -1,2 +1,74 @@
 .ctasection {
+  background-color: $lightBlue;
+  min-height: 100vh;
+
+  &__container {
+    padding-top: 126px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  &__h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 128.4%;
+    color: $darkColor;
+    max-width: 469px;
+  }
+  &__p {
+    margin-bottom: 60px;
+    font-size: 21px;
+    opacity: 0.7;
+    color: $darkColor;
+  }
+  &__try {
+    background-color: $primaryColor !important;
+    color: #fff !important;
+    margin-right: 30px;
+  }
+  &__free {
+    background-color: transparent !important;
+    color: $primaryColor !important;
+    border: solid 1px $primaryColor;
+  }
+  &__line {
+    border-bottom: 1px solid $darkColor;
+    width: 167px;
+    display: block;
+    margin-top: 90px;
+    margin-bottom: 42px;
+    opacity: 0.15;
+  }
+  &__star {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__business {
+    margin-left: 24px;
+    max-width: 274px;
+    color: $darkColor;
+    font-size: 18px;
+    margin-bottom: 209px;
+  }
+
+  &__bold {
+    font-weight: 600;
+    line-height: 161.7%;
+  }
+
+  &__image {
+    position: static;
+    margin-left: -3vw;
+
+    @include breakpoint(fromLarge) {
+      position: absolute;
+      left: 0;
+      margin-top: -15px;
+      margin-left: 0;
+    }
+  }
 }

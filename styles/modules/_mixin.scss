@@ -4,4 +4,16 @@
       @content;
     }
   }
+
+  @if $bkr == fromLarge {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $bkr == fromXLarge {
+    @media (min-width: 1411px) {
+      @content;
+    }
+  }
 }
