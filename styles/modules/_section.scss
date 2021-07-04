@@ -37,11 +37,18 @@
   }
   &__try {
     margin-right: 36px;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
   }
   &__free {
     padding: 12 33px !important;
     border: 1px solid #fff !important;
     background-color: transparent !important;
     color: #fff !important;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+    }
   }
 }
