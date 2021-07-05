@@ -1,8 +1,18 @@
 .button {
   font-weight: 500;
-  font-size: 17px;
-  padding: 12px 46.5px;
+
+  font-size: 16px;
+  padding: 6px 13.5px;
+
   color: $primaryColor;
   background-color: #fff;
   border-radius: 60px;
+
+  @include breakpoint(fromLarge) {
+    padding: 12px 46.5px;
+  }
+  @include breakpoint(fromSmall) {
+    font-size: 17px;
+    padding: 9px 30.5px;
+  }
 }

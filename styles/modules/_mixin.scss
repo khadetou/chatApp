@@ -1,4 +1,10 @@
 @mixin breakpoint($bkr) {
+  @if $bkr == fromSmall {
+    @media (min-width: 530px) {
+      @content;
+    }
+  }
+
   @if $bkr == fromMedium {
     @media (min-width: 800px) {
       @content;
